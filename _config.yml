@@ -1,0 +1,29 @@
+# Site settings
+title: Arca Training
+email: caroline.guilherme@arcasolutions.com
+description: Tutorial for Developers about Arca Products
+baseurl: ""
+url: "http://arcatraining"
+
+author:
+  name     : 'Arca Training'
+  email    : caroline.guilherme@arcasolutions.com
+  url      : http://edirectory.com
+  facebook : http://facebook.com/arcasolutions
+  twitter  : http://twitter.com/arcasolutions
+
+github: https://github.com/arcatraining
+disqus_shortname: "arcasolutions"
+google_analytics: ""
+
+paginate: 20
+comments: true
+paginate_path: "/page/:num"
+
+sass:
+  style: :compressed
+  sass_dir: _sass
+
+# Build settings
+markdown  : kramdown
+permalink : /:title/
