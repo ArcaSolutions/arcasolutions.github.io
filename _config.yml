@@ -1,18 +1,18 @@
 # Site settings
-title: Arca Training
-email: caroline.guilherme@arcasolutions.com
+title: Arca Solutions Tutorials & Training
+email: basecode@arcasolutions.com
 description: Tutorial for Developers about Arca Products
-baseurl: ""
-url: "http://arcatraining"
+baseurl: "http://arcasolutions.github.io/"
+url: "http://arcasolutions.github.io/"
 
 author:
-  name     : 'Arca Training'
-  email    : caroline.guilherme@arcasolutions.com
-  url      : http://edirectory.com
+  name     : 'Arca Solutions'
+  email    : basecode@arcasolutions.com
+  url      : http://arcasolutions.com
   facebook : http://facebook.com/arcasolutions
   twitter  : http://twitter.com/arcasolutions
 
-github: https://github.com/arcatraining
+github: https://github.com/arcasolutions
 disqus_shortname: "arcasolutions"
 google_analytics: ""
 
