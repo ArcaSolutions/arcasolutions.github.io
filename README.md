@@ -1,4 +1,4 @@
-# Arca Training
+# Arca Solutions Tutorials & Training
 
 * [x] Design Customizations
 * [x] Developer Customizations
