@@ -305,18 +305,18 @@ For your theme customization, you'll work on three sections of the system:
 * [Home Page](http://demodirectory.com/):
 * [Sitemap](http://demodirectory.com/sitemap):
 * [Claim](http://demodirectory.com/listing/claim/donna-auto-parts):
-** [Claim > Billing]
-** [Claim > Invoice]
-** [Claim > Listing]
-** [Claim > Listing Level]
-** [Claim > Payment]
-** [Claim > Process Payment]
+  * [Claim > Billing]
+  * [Claim > Invoice]
+  * [Claim > Listing]
+  * [Claim > Listing Level]
+  * [Claim > Payment]
+  * [Claim > Process Payment]
 * [Results](http://demodirectory.com/keyword):
 * [Advertise](http://demodirectory.com/advertise):
 * [Order Listing](http://demodirectory.com/advertise/listing/10):
-** [Signup > Invoice]
-** [Signup > Payment]
-** [Signup > Process Payment]
+  * [Signup > Invoice]
+  * [Signup > Payment]
+  * [Signup > Process Payment]
 * [Order Event](http://demodirectory.com/advertise/event/10):
 * [Order Classified](http://demodirectory.com/advertise/classified/10):
 * [Order Banner](http://demodirectory.com/advertise/banner/3):
@@ -377,10 +377,10 @@ For your theme customization, you'll work on three sections of the system:
 * [Listing > Level](http://demodirectory.com/sponsors/listing/listinglevel.php)
 * [Listing > Click to call](http://demodirectory.com/sponsors/listing/clicktocall.php?id=53519)
 * [Checkout > Make Payment](http://demodirectory.com/sponsors/billing/)
-** [Checkout > Pay (step 2)]
-** [Checkout > Process Payment (step 3 - retorno do gateway)]()
+  * [Checkout > Pay (step 2)]
+  * [Checkout > Process Payment (step 3 - retorno do gateway)]()
 * [Transactions > History](http://demodirectory.com/sponsors/transactions/)
-** [Transactions > View]
+  * [Transactions > View]
 
 Usually, the sections Profile and Sponsors do not require any heavy custom work and the HTML should not be changed. Simply go through each page to make sure your new theme style (fonts, typography, etc), was properly applied to these sections.
 
