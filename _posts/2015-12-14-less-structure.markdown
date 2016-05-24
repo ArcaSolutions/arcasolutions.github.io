@@ -300,87 +300,85 @@ Constants from a specific section can be used in other sections. For examples, t
 
 For your theme customization, you'll work on three sections of the system:
 
-1) Frontend: all pages available for site visitor. This sections includes the following pages:
+1) Frontend: all pages available for site visitor. This section includes the following pages:
 
-* [Home Page](http://demodirectory.com/):
-* [Sitemap](http://demodirectory.com/sitemap):
-* [Claim](http://demodirectory.com/listing/claim/donna-auto-parts):
-  * [Claim > Billing]
-  * [Claim > Invoice]
-  * [Claim > Listing]
-  * [Claim > Listing Level]
-  * [Claim > Payment]
-  * [Claim > Process Payment]
-* [Results](http://demodirectory.com/keyword):
-* [Advertise](http://demodirectory.com/advertise):
-* [Order Listing](http://demodirectory.com/advertise/listing/10):
-  * [Signup > Invoice]
-  * [Signup > Payment]
-  * [Signup > Process Payment]
-* [Order Event](http://demodirectory.com/advertise/event/10):
-* [Order Classified](http://demodirectory.com/advertise/classified/10):
-* [Order Banner](http://demodirectory.com/advertise/banner/3):
-* [Order Article](http://demodirectory.com/advertise/article/50):
-* [Maintenance Page](http://demodirectory.com/maintenance):
-* [Contact Us](http://demodirectory.com/contactus):
-* [Faq](http://demodirectory.com/faq):
-* [Error Page](http://demodirectory.com/INVALIDURL):
-* [Lead General Form](http://demodirectory.com/enquire):
-* [Listing Home](http://demodirectory.com/listing/):
-* [Listing Detail](http://demodirectory.com/listing/yerania-beauty-salon.html):
-* [Listing Reviews](http://demodirectory.com/listing/reviews/beyond-hair):
-* [Listing All Categories](http://demodirectory.com/listing/categories):
-* [Listing All Locations](http://demodirectory.com/listing/locations):
-* [Event Home](http://demodirectory.com/event/):
-* [Event Detail](http://demodirectory.com/event/balloon-expo.html):
-* [Classified Home](http://demodirectory.com/classified/):
-* [Classified  Detail](http://demodirectory.com/classified/fashion-jewelry.html):
-* [Article Home](http://demodirectory.com/article/):
-* [Article  Detail](http://demodirectory.com/article/retirement-plans.html):
-* [Article  All Categories](http://demodirectory.com/article/categories):
-* [Article Reviews](http://demodirectory.com/article/reviews/retirement-plans):
-* [Deal  Home](http://demodirectory.com/deal/):
-* [Deal  Detail](http://demodirectory.com/deal/60-off-for-dessert-at-mexican.html):
-* [Blog Home](http://demodirectory.com/blog/):
-* [Blog Detail](http://demodirectory.com/blog/beauty-tips.html):
-* [Privacy Policy](http://demodirectory.com/privacy):
-* [Terms of Use](http://demodirectory.com/terms):
+* [Home Page](http://demodirectory.com/): Initial page of eDirectory.
+* [Sitemap](http://demodirectory.com/sitemap): Site map page.
+* [Claim](http://demodirectory.com/listing/claim/donna-auto-parts): On this page, visitors can claim their listings. After the process, the user will have created an account and associate the listing for him. The pages below are used on the claim process (sign up, listing edition and payment).
+  * Listing Level: Listing level edition.
+  * Listing: Listing edition.
+  * Billing: Payment option selection.
+  * Invoice: Payment by invoice.
+  * Payment: Payment by credit card.
+  * Process Payment: Payment confirmation.
+* [Results](http://demodirectory.com/keyword): Search results page. Remember to customize the summary view for all modules (each one has a different structure).
+* [Advertise](http://demodirectory.com/advertise): On this page, visitors can start the sign up process to order an item on eDirectory.
+* [Order Listing](http://demodirectory.com/advertise/listing/10): Sign up for an account and create a listing.
+  * Invoice: Payment by invoice.
+  * Payment: Payment by credit card.
+  * Process Payment: Payment confirmation.
+* [Order Event](http://demodirectory.com/advertise/event/10): Sign up for an account and create an event.
+* [Order Classified](http://demodirectory.com/advertise/classified/10): Sign up for an account and create a classified.
+* [Order Banner](http://demodirectory.com/advertise/banner/3): Sign up for an account and create a banner.
+* [Order Article](http://demodirectory.com/advertise/article/50): Sign up for an account and create an article.
+* [Maintenance Page](http://demodirectory.com/maintenance): Maintenance page (must be turned on by the site manager). This page is basically the header and footer with a section on the body for a custom site content (site contents are blocks of HTML that the site manager can edit).
+* [Contact Us](http://demodirectory.com/contactus): Contact Us page.
+* [Faq](http://demodirectory.com/faq): FAQ page.
+* [Error Page](http://demodirectory.com/listing/invalidurl.html): Error page. Same structure as the maintenance page.
+* [Lead General Form](http://demodirectory.com/enquire): Enquire page.
+* [Listing Home](http://demodirectory.com/listing/): Listing home page.
+* [Listing Detail](http://demodirectory.com/listing/yerania-beauty-salon.html): Listing detail page.
+* [Listing Reviews](http://demodirectory.com/listing/reviews/beyond-hair): Listing reviews page (this page also exists for Articles)
+* [Listing All Categories](http://demodirectory.com/listing/categories): Page that lists all categories (exists for all modules)
+* [Listing All Locations](http://demodirectory.com/listing/locations): Page that lists all locations (exists for listings, events and classified)
+* [Event Home](http://demodirectory.com/event/): Event home page.
+* [Event Detail](http://demodirectory.com/event/balloon-expo.html): Event detail page.
+* [Classified Home](http://demodirectory.com/classified/): Classified home page.
+* [Classified  Detail](http://demodirectory.com/classified/fashion-jewelry.html): Classified detail page.
+* [Article Home](http://demodirectory.com/article/): Article home page.
+* [Article  Detail](http://demodirectory.com/article/retirement-plans.html): Article detail page.
+* [Deal  Home](http://demodirectory.com/deal/): Deal home page.
+* [Deal  Detail](http://demodirectory.com/deal/60-off-for-dessert-at-mexican.html): Deal detail page.
+* [Blog Home](http://demodirectory.com/blog/): Blog home page.
+* [Blog Detail](http://demodirectory.com/blog/beauty-tips.html): Blog detail page.
+* [Privacy Policy](http://demodirectory.com/privacy): Privacy policy page. Same structure as the maintenance page.
+* [Terms of Use](http://demodirectory.com/terms): Terms of Use page. Same structure as the maintenance page.
 
-2) Profile: sections where visitors can sign up and manage their accounts. This sections includes the following pages:
+2) Profile: section where visitors can sign up and manage their accounts. This section includes the following pages:
 
-* [Profile Add](http://demodirectory.com/profile/add.php):
-* [Profile Edit](http://demodirectory.com/profile/edit.php):
-* [Profile Home](http://demodirectory.com/profile/):
-* [Profile Login](http://demodirectory.com/profile/login.php):
-* [Profile Forgot Password](http://demodirectory.com/profile/forgot.php):
-* Profile Reset Password:
+* [Profile Add](http://demodirectory.com/profile/add.php): Page where visitors can create a profile account.
+* [Profile Edit](http://demodirectory.com/profile/edit.php): Page where visitors can manage their account.
+* [Profile Home](http://demodirectory.com/profile/): Profile home page (user must be logged)
+* [Profile Login](http://demodirectory.com/profile/login.php): Log in to profile section
+* [Profile Forgot Password](http://demodirectory.com/profile/forgot.php): Page to request a link to reset the password.
+  * Profile Reset Password: Page to reset the password.
 
-3) Sponsors: section where sponsors can manage their ads, make payments, etc. This sections includes the following pages:
+3) Sponsors: section where sponsors can manage their ads, make payments, etc. This section includes the following pages:
 
-* [Dashboard](http://demodirectory.com/sponsors/)
-* [Faq](http://demodirectory.com/sponsors/faq.php)
-* [Help](http://demodirectory.com/sponsors/help.php)
-* [Login](http://demodirectory.com/sponsors/login.php)
-* [Forgot password](http://demodirectory.com/sponsors/forgot.php)
-* Reset password:
-* [Account](http://demodirectory.com/sponsors/account/)
-* [Article > Add / Edit](http://demodirectory.com/sponsors/article/article.php)
-* [Banner > Add / Edit](http://demodirectory.com/sponsors/banner/banner.php)
-* [Classified > Add / Edit](http://demodirectory.com/sponsors/classified/classified.php?level=10)
-* [Classified > Level](http://demodirectory.com/sponsors/classified/classifiedlevel.php)
-* [Deal > Add / Edit](http://demodirectory.com/sponsors/deal/deal.php?listing_id=53519)
-* [Event > Add / Edit](http://demodirectory.com/sponsors/event/event.php?level=10)
-* [Event > Level](http://demodirectory.com/sponsors/event/eventlevel.php)
-* [Listing > Add / Edit](http://demodirectory.com/sponsors/listing/listing.php?level=10)
-* [Listing > Package](http://demodirectory.com/sponsors/listing/order_package.php?level=10&listingtemplate_id=9)
-* [Listing > Backlink](http://demodirectory.com/sponsors/listing/backlinks.php?id=53519)
-* [Listing > Level](http://demodirectory.com/sponsors/listing/listinglevel.php)
-* [Listing > Click to call](http://demodirectory.com/sponsors/listing/clicktocall.php?id=53519)
-* [Checkout > Make Payment](http://demodirectory.com/sponsors/billing/)
-  * [Checkout > Pay (step 2)]
-  * [Checkout > Process Payment (step 3 - retorno do gateway)]()
-* [Transactions > History](http://demodirectory.com/sponsors/transactions/)
-  * [Transactions > View]
+* [Dashboard](http://demodirectory.com/sponsors/): Sponsors home page.
+* [Faq](http://demodirectory.com/sponsors/faq.php): FAQ page for sponsors.
+* [Help](http://demodirectory.com/sponsors/help.php): Help page for sponsors.
+* [Login](http://demodirectory.com/sponsors/login.php): Log in to sponsors section.
+* [Forgot password](http://demodirectory.com/sponsors/forgot.php): Page to request a link to reset the password.
+  * Reset password: Page to reset the password.
+* [Account](http://demodirectory.com/sponsors/account/): Page where sponsors can manage their account.
+* [Article > Add / Edit](http://demodirectory.com/sponsors/article/article.php): Add or edit an article.
+* [Banner > Add / Edit](http://demodirectory.com/sponsors/banner/banner.php): Add or edit a banner.
+* [Classified > Add / Edit](http://demodirectory.com/sponsors/classified/classified.php?level=10): Add or edit a classified.
+* [Classified > Level](http://demodirectory.com/sponsors/classified/classifiedlevel.php): First step to add a new classified.
+* [Deal > Add / Edit](http://demodirectory.com/sponsors/deal/deal.php?listing_id=53519): Create and associate a deal to a listing.
+* [Event > Add / Edit](http://demodirectory.com/sponsors/event/event.php?level=10): Add or edit an event.
+* [Event > Level](http://demodirectory.com/sponsors/event/eventlevel.php): First step to add a new event.
+* [Listing > Add / Edit](http://demodirectory.com/sponsors/listing/listing.php?level=10): Add or edit a listing.
+* [Listing > Package](http://demodirectory.com/sponsors/listing/order_package.php?level=10&listingtemplate_id=9): Second step to add a new listing.
+* [Listing > Backlink](http://demodirectory.com/sponsors/listing/backlinks.php?id=53519): Activate the backlink feature for a listing.
+* [Listing > Level](http://demodirectory.com/sponsors/listing/listinglevel.php): First step to add a new listing.
+* [Listing > Click to call](http://demodirectory.com/sponsors/listing/clicktocall.php?id=53519): Activate the click to call functionality to a listing.
+* [Checkout > Make Payment](http://demodirectory.com/sponsors/billing/): Select payment option.
+  * Pay (step 2): Pay by invoice or credit card.
+  * Process Payment: Payment confirmation.
+* [Transactions > History](http://demodirectory.com/sponsors/transactions/): Manage and view transcations.
+  * Transactions > View
 
 Usually, the sections Profile and Sponsors do not require any heavy custom work and the HTML should not be changed. Simply go through each page to make sure your new theme style (fonts, typography, etc), was properly applied to these sections.
 
