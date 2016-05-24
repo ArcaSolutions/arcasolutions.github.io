@@ -243,7 +243,7 @@ The last step of your theme customization is to update this functionality. This 
 1.2) File after adding the new theme called **mytheme**
 
 {% highlight php %}
-
+{% raw %}
     //Theme: Default
 	//Scheme Color: Default
 
@@ -329,7 +329,8 @@ The last step of your theme customization is to update this functionality. This 
     $arrayColors["mytheme"]["mytheme"]["colorKnob"] = "333333";
 
 	define("ARRAY_DEFAULT_COLORS", serialize($arrayColors));
-
+	
+{% endraw %}
 {% highlight %}
 
 ---
