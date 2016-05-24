@@ -258,6 +258,42 @@ define("ARRAY_DEFAULT_COLORS", serialize($arrayColors));
 {% endraw %}
 {% endhighlight %}
 
+2) Update the base color scheme file: Now you need to update the base css file that replaces the main colors of your theme. This file is a regular css stylesheet, but with PHP extension.
+Instead of defining the colors, PHP constants are used instead. These constants are like placeholders that will be replaced by the values saved on the sitemgr.
+
+{% highlight php %}
+{% raw %}
+
+.text-highlight {
+    color: #<?=SCHEME_COLOR2?>;
+}
+
+{% endraw %}
+{% endhighlight %}
+
+On the example above, after changing a color on the site manager, the class `text-highligt` color will be replaced by the second main color.
+
+The following PHP constants are available:
+
+* SCHEME_FONTOPTION: Font Family
+* SCHEME_COLOR1: Main color
+* SCHEME_COLOR2: Second color
+* SCHEME_COLORNAVBAR: Navigation bar
+* SCHEME_COLORNAVBARLINK: Navigation bar links
+* SCHEME_COLORFOOTERLINK: Footer links
+
+Constants from a specific section can be used in other sections. For examples, the constant `SCHEME_COLORFOOTERLINK` is not only used on the footer structure, see below:
+
+{% highlight php %}
+{% raw %}
+
+.theme-box-inverse .theme-box-content, .theme-box-inverse .theme-box-content p {
+    color: #<?=SCHEME_COLORFOOTERLINK?>;
+}
+
+{% endraw %}
+{% endhighlight %}
+
 ---
 
 ## Pages List
