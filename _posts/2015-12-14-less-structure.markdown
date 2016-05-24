@@ -146,9 +146,197 @@ To customize an eDirectory theme, you'll be working on the following folders:
 
 * /pages: secondary pages like contact us, faq, site map, etc
 
-2) `/edirectory/web/theme/customtheme`: eDirectory still has some legacy code that was not migrated to Symfony yet. The profile and members sections are one of those code. For the profile section, it has the same header and footer as the frontend structure, and the HTML is duplicated on this folder.
+2) `/edirectory/web/theme/customtheme`: eDirectory still has some legacy code that was not migrated to Symfony yet. The profile and members sections are one of those code. For the profile section, it has the same header and footer as the frontend structure, and the HTML is duplicated on this folder. If your customization includes any structure change on the header or footer, it should be replicated on the files `header.php` and `footer.php` from this folder.
 
-------
+---
+
+## Color Scheme
+
+The color scheme features allows the site manager to easily change the main colors of the site. eDirectory's default theme offers five colors to be changed:
+* Color 1 and Color 2: these are the two main colors of theme pallet
+* Main navigation background
+* Main navigation bar links
+* Footer links
+
+If you need more colors, talk to a developer, some PHP changes will be needed.
+
+Additionaly, it's also possible to change the font family.
+
+The last step of your theme customization is to update this functionality. This is done in two steps:
+
+1) Update the default colors: here you simply need to tell the system which are the default colors of your theme, so the site manager can easily restore the pallet. To do so, open the file `edirectory/web/conf/default_themecolors.inc.php`. Copy the block of an existing theme, paste it **before** the line `define("ARRAY_DEFAULT_COLORS", serialize($arrayColors));` and replace the colors. See example below:
+
+1.1) Original file
+
+{% highlight php %}
+
+    //Theme: Default
+	//Scheme Color: Default
+
+	//Main pallete colors
+	$arrayColors["default"]["default"]["color1"] = "42414f";
+	$arrayColors["default"]["default"]["color2"] = "ff5a5f";
+
+	//Advanced colors
+	$arrayColors["default"]["default"]["colorNavbar"] = "f8f8f8";
+	$arrayColors["default"]["default"]["colorNavbarLink"] = "252525";
+	$arrayColors["default"]["default"]["colorFooterLink"] = "f2f2f4";
+	$arrayColors["default"]["default"]["fontOption"] = "1";
+	$arrayColors["default"]["default"]["fontName"] = "\"Source Sans Pro\", \"Trebuchet MS\", sans-serif";
+
+	$arrayColors["default"]["default"]["colorKnob"] = "333333";
+
+	# ----------------------------------------------------------------------------------------------------
+	//Theme: Doctor
+	//Scheme Color: Doctor
+
+	//Main pallete colors
+	$arrayColors["doctor"]["doctor"]["color1"] = "244576";
+	$arrayColors["doctor"]["doctor"]["color2"] = "638cbf";
+
+	//Advanced colors
+	$arrayColors["doctor"]["doctor"]["colorNavbar"] = "ffffff";
+	$arrayColors["doctor"]["doctor"]["colorNavbarLink"] = "2d2d2c";
+	$arrayColors["doctor"]["doctor"]["colorFooterLink"] = "2d2d2c";
+	$arrayColors["doctor"]["doctor"]["fontOption"] = "1";
+	$arrayColors["doctor"]["doctor"]["fontName"] = "\"Source Sans Pro\", \"Trebuchet MS\", sans-serif";
+
+	$arrayColors["doctor"]["doctor"]["colorKnob"] = "333333";
+
+	# ----------------------------------------------------------------------------------------------------
+	//Theme: Restaurant
+	//Scheme Color: Restaurant
+
+	//Main pallete colors
+	$arrayColors["restaurant"]["restaurant"]["color1"] = "722302";
+	$arrayColors["restaurant"]["restaurant"]["color2"] = "180c0c";
+
+	//Advanced colors
+	$arrayColors["restaurant"]["restaurant"]["colorNavbar"] = "f1f4f0";
+	$arrayColors["restaurant"]["restaurant"]["colorNavbarLink"] = "722302";
+	$arrayColors["restaurant"]["restaurant"]["colorFooterLink"] = "22161b";
+	$arrayColors["restaurant"]["restaurant"]["fontOption"] = "1";
+	$arrayColors["restaurant"]["restaurant"]["fontName"] = "Bitter, Georgia, \"Times New Roman\", Times, serif;";
+
+	$arrayColors["restaurant"]["restaurant"]["colorKnob"] = "333333";
+	# ----------------------------------------------------------------------------------------------------
+	//Theme: Wedding
+	//Scheme Color: Wedding
+
+	//Main pallete colors
+	$arrayColors["wedding"]["wedding"]["color1"] = "7f4c4c";
+	$arrayColors["wedding"]["wedding"]["color2"] = "ff9797";
+
+	//Advanced colors
+	$arrayColors["wedding"]["wedding"]["colorNavbar"] = "fcfcfc";
+	$arrayColors["wedding"]["wedding"]["colorNavbarLink"] = "7f4c4c";
+	$arrayColors["wedding"]["wedding"]["colorFooterLink"] = "ffffff";
+	$arrayColors["wedding"]["wedding"]["fontOption"] = "1";
+	$arrayColors["wedding"]["wedding"]["fontName"] = "\"Source Sans Pro\", \"Trebuchet MS\", sans-serif;";
+
+	$arrayColors["wedding"]["wedding"]["colorKnob"] = "333333";
+
+	define("ARRAY_DEFAULT_COLORS", serialize($arrayColors));
+
+{% highlight %}
+
+1.2) File after adding the new theme called **mytheme**
+
+{% highlight php %}
+
+    //Theme: Default
+	//Scheme Color: Default
+
+	//Main pallete colors
+	$arrayColors["default"]["default"]["color1"] = "42414f";
+	$arrayColors["default"]["default"]["color2"] = "ff5a5f";
+
+	//Advanced colors
+	$arrayColors["default"]["default"]["colorNavbar"] = "f8f8f8";
+	$arrayColors["default"]["default"]["colorNavbarLink"] = "252525";
+	$arrayColors["default"]["default"]["colorFooterLink"] = "f2f2f4";
+	$arrayColors["default"]["default"]["fontOption"] = "1";
+	$arrayColors["default"]["default"]["fontName"] = "\"Source Sans Pro\", \"Trebuchet MS\", sans-serif";
+
+	$arrayColors["default"]["default"]["colorKnob"] = "333333";
+
+	# ----------------------------------------------------------------------------------------------------
+	//Theme: Doctor
+	//Scheme Color: Doctor
+
+	//Main pallete colors
+	$arrayColors["doctor"]["doctor"]["color1"] = "244576";
+	$arrayColors["doctor"]["doctor"]["color2"] = "638cbf";
+
+	//Advanced colors
+	$arrayColors["doctor"]["doctor"]["colorNavbar"] = "ffffff";
+	$arrayColors["doctor"]["doctor"]["colorNavbarLink"] = "2d2d2c";
+	$arrayColors["doctor"]["doctor"]["colorFooterLink"] = "2d2d2c";
+	$arrayColors["doctor"]["doctor"]["fontOption"] = "1";
+	$arrayColors["doctor"]["doctor"]["fontName"] = "\"Source Sans Pro\", \"Trebuchet MS\", sans-serif";
+
+	$arrayColors["doctor"]["doctor"]["colorKnob"] = "333333";
+
+	# ----------------------------------------------------------------------------------------------------
+	//Theme: Restaurant
+	//Scheme Color: Restaurant
+
+	//Main pallete colors
+	$arrayColors["restaurant"]["restaurant"]["color1"] = "722302";
+	$arrayColors["restaurant"]["restaurant"]["color2"] = "180c0c";
+
+	//Advanced colors
+	$arrayColors["restaurant"]["restaurant"]["colorNavbar"] = "f1f4f0";
+	$arrayColors["restaurant"]["restaurant"]["colorNavbarLink"] = "722302";
+	$arrayColors["restaurant"]["restaurant"]["colorFooterLink"] = "22161b";
+	$arrayColors["restaurant"]["restaurant"]["fontOption"] = "1";
+	$arrayColors["restaurant"]["restaurant"]["fontName"] = "Bitter, Georgia, \"Times New Roman\", Times, serif;";
+
+	$arrayColors["restaurant"]["restaurant"]["colorKnob"] = "333333";
+
+	# ----------------------------------------------------------------------------------------------------
+	//Theme: Wedding
+	//Scheme Color: Wedding
+
+	//Main pallete colors
+	$arrayColors["wedding"]["wedding"]["color1"] = "7f4c4c";
+	$arrayColors["wedding"]["wedding"]["color2"] = "ff9797";
+
+	//Advanced colors
+	$arrayColors["wedding"]["wedding"]["colorNavbar"] = "fcfcfc";
+	$arrayColors["wedding"]["wedding"]["colorNavbarLink"] = "7f4c4c";
+	$arrayColors["wedding"]["wedding"]["colorFooterLink"] = "ffffff";
+	$arrayColors["wedding"]["wedding"]["fontOption"] = "1";
+	$arrayColors["wedding"]["wedding"]["fontName"] = "\"Source Sans Pro\", \"Trebuchet MS\", sans-serif;";
+
+	$arrayColors["wedding"]["wedding"]["colorKnob"] = "333333";
+
+	# ----------------------------------------------------------------------------------------------------
+    //Theme: MyTheme
+    //Scheme Color: MyTheme
+
+    //Main pallete colors
+    $arrayColors["mytheme"]["mytheme"]["color1"] = "7f4c4c";
+    $arrayColors["mytheme"]["mytheme"]["color2"] = "ff9797";
+
+    //Advanced colors
+    $arrayColors["mytheme"]["mytheme"]["colorNavbar"] = "fcfcfc";
+    $arrayColors["mytheme"]["mytheme"]["colorNavbarLink"] = "7f4c4c";
+    $arrayColors["mytheme"]["mytheme"]["colorFooterLink"] = "ffffff";
+    $arrayColors["mytheme"]["mytheme"]["fontOption"] = "1";
+    $arrayColors["mytheme"]["mytheme"]["fontName"] = "\"Source Sans Pro\", \"Trebuchet MS\", sans-serif;";
+
+    $arrayColors["mytheme"]["mytheme"]["colorKnob"] = "333333";
+
+	define("ARRAY_DEFAULT_COLORS", serialize($arrayColors));
+
+{% highlight %}
+
+---
+
+## Pages List
+
+---
 
 ## Literature
 
