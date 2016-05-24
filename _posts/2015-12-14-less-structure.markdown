@@ -302,109 +302,85 @@ For your theme customization, you'll work on three sections of the system:
 
 1) Frontend: all pages available for site visitor. This sections includes the following pages:
 
-* Sitemap
-* Claim
-* Results (raiz)
-* Advertise
-* Order Listing
-* Order Event
-* Order Classified
-* Order Banner
-* Order Article
-* Maintenance Page
-* Home Page
-* Contact Us
-* Faq
-* Error Page
-* Lead General Form
-* Listing Home
-* Listing Results
-* Listing Detail
-* Listing Reviews
-* Listing Checkins
-* Listing All Categories
-* Listing All Locations
-* Event Home
-* Event Results
-* Event Detail
-* Event All Categories
-* Event All Locations
-* Classified Home
-* Classified  Results
-* Classified  Detail
-* Classified  All Categories
-* Classified  All Locations
-* Article Home
-* Article  Results
-* Article  Detail
-* Article  All Categories
-* Article Reviews
-* Deal  Home
-* Deal  Results
-* Deal  Detail
-* Deal  All Categories
-* Deal All Locations
-* Blog Home
-* Blog Results
-* Blog Detail
-* Blog All Categories
-* Privacy Policy
-* Terms of Use
+* [Home Page](http://demodirectory.com/):
+* [Sitemap](http://demodirectory.com/sitemap):
+* [Claim](http://demodirectory.com/listing/claim/donna-auto-parts):
+** [Claim > Billing]
+** [Claim > Invoice]
+** [Claim > Listing]
+** [Claim > Listing Level]
+** [Claim > Payment]
+** [Claim > Process Payment]
+* [Results](http://demodirectory.com/keyword):
+* [Advertise](http://demodirectory.com/advertise):
+* [Order Listing](http://demodirectory.com/advertise/listing/10):
+** [Signup > Invoice]
+** [Signup > Payment]
+** [Signup > Process Payment]
+* [Order Event](http://demodirectory.com/advertise/event/10):
+* [Order Classified](http://demodirectory.com/advertise/classified/10):
+* [Order Banner](http://demodirectory.com/advertise/banner/3):
+* [Order Article](http://demodirectory.com/advertise/article/50):
+* [Maintenance Page](http://demodirectory.com/maintenance):
+* [Contact Us](http://demodirectory.com/contactus):
+* [Faq](http://demodirectory.com/faq):
+* [Error Page](http://demodirectory.com/INVALIDURL):
+* [Lead General Form](http://demodirectory.com/enquire):
+* [Listing Home](http://demodirectory.com/listing/):
+* [Listing Detail](http://demodirectory.com/listing/yerania-beauty-salon.html):
+* [Listing Reviews](http://demodirectory.com/listing/reviews/beyond-hair):
+* [Listing All Categories](http://demodirectory.com/listing/categories):
+* [Listing All Locations](http://demodirectory.com/listing/locations):
+* [Event Home](http://demodirectory.com/event/):
+* [Event Detail](http://demodirectory.com/event/balloon-expo.html):
+* [Classified Home](http://demodirectory.com/classified/):
+* [Classified  Detail](http://demodirectory.com/classified/fashion-jewelry.html):
+* [Article Home](http://demodirectory.com/article/):
+* [Article  Detail](http://demodirectory.com/article/retirement-plans.html):
+* [Article  All Categories](http://demodirectory.com/article/categories):
+* [Article Reviews](http://demodirectory.com/article/reviews/retirement-plans):
+* [Deal  Home](http://demodirectory.com/deal/):
+* [Deal  Detail](http://demodirectory.com/deal/60-off-for-dessert-at-mexican.html):
+* [Blog Home](http://demodirectory.com/blog/):
+* [Blog Detail](http://demodirectory.com/blog/beauty-tips.html):
+* [Privacy Policy](http://demodirectory.com/privacy):
+* [Terms of Use](http://demodirectory.com/terms):
 
 2) Profile: sections where visitors can sign up and manage their accounts. This sections includes the following pages:
 
-* Profile Add
-* Profile Edit
-* Profile Home
-* Profile Login
-* Profile Forgot Password
-* Profile Reset Password
+* [Profile Add](http://demodirectory.com/profile/add.php):
+* [Profile Edit](http://demodirectory.com/profile/edit.php):
+* [Profile Home](http://demodirectory.com/profile/):
+* [Profile Login](http://demodirectory.com/profile/login.php):
+* [Profile Forgot Password](http://demodirectory.com/profile/forgot.php):
+* Profile Reset Password:
 
 3) Sponsors: section where sponsors can manage their ads, make payments, etc. This sections includes the following pages:
 
-* Home
-* Faq
-* Forgot password
-* Help
-* Login
-* Reset password
-* Account
-* Article > Add / Edit
-* Article > Package
-* Article > Preview
-* Banner > Add / Edit
-* Banner > Preview
-* Classified > Add / Edit
-* Classified > Level
-* Classified > Package
-* Classified > Preview
-* Deal > Add / Edit
-* Deal > Preview
-* Event > Add / Edit
-* Event > Preview
-* Event > Level
-* Event > Package
-* Listing > Add / Edit
-* Listing > Package
-* Listing > Preview
-* Listing > Backlink
-* Listing > Level
-* Listing > Click to call
-* Checkout > Make Payment
-* Checkout > Invoice (pop up)
-* Checkout > Pay (step 2)
-* Checkout > Process Payment (step 3 - retorno do gateway)
-* Transactions > History
-* Transactions > View
-* Claim > Billing
-* Claim > Invoice
-* Claim > Listing
-* Claim > Listing Level
-* Claim > Payment
-* Claim > Process Payment
-* Signup > Invoice
-* Signup > Payment
-* Signup > Process Payment
+* [Dashboard](http://demodirectory.com/sponsors/)
+* [Faq](http://demodirectory.com/sponsors/faq.php)
+* [Help](http://demodirectory.com/sponsors/help.php)
+* [Login](http://demodirectory.com/sponsors/login.php)
+* [Forgot password](http://demodirectory.com/sponsors/forgot.php)
+* Reset password:
+* [Account](http://demodirectory.com/sponsors/account/)
+* [Article > Add / Edit](http://demodirectory.com/sponsors/article/article.php)
+* [Banner > Add / Edit](http://demodirectory.com/sponsors/banner/banner.php)
+* [Classified > Add / Edit](http://demodirectory.com/sponsors/classified/classified.php?level=10)
+* [Classified > Level](http://demodirectory.com/sponsors/classified/classifiedlevel.php)
+* [Deal > Add / Edit](http://demodirectory.com/sponsors/deal/deal.php?listing_id=53519)
+* [Event > Add / Edit](http://demodirectory.com/sponsors/event/event.php?level=10)
+* [Event > Level](http://demodirectory.com/sponsors/event/eventlevel.php)
+* [Listing > Add / Edit](http://demodirectory.com/sponsors/listing/listing.php?level=10)
+* [Listing > Package](http://demodirectory.com/sponsors/listing/order_package.php?level=10&listingtemplate_id=9)
+* [Listing > Backlink](http://demodirectory.com/sponsors/listing/backlinks.php?id=53519)
+* [Listing > Level](http://demodirectory.com/sponsors/listing/listinglevel.php)
+* [Listing > Click to call](http://demodirectory.com/sponsors/listing/clicktocall.php?id=53519)
+* [Checkout > Make Payment](http://demodirectory.com/sponsors/billing/)
+** [Checkout > Pay (step 2)]
+** [Checkout > Process Payment (step 3 - retorno do gateway)]()
+* [Transactions > History](http://demodirectory.com/sponsors/transactions/)
+** [Transactions > View]
 
 Usually, the sections Profile and Sponsors do not require any heavy custom work and the HTML should not be changed. Simply go through each page to make sure your new theme style (fonts, typography, etc), was properly applied to these sections.
 
