@@ -152,7 +152,12 @@ To customize an eDirectory theme, you'll be working on the following folders:
 
 ## Color Scheme
 
-The color scheme features allows the site manager to easily change the main colors of the site. eDirectory's default theme offers five colors to be changed:
+The color scheme features allows the site manager to easily change the main colors of the site.
+
+![Color Scheme interface](/assets/posts/2015-12-14-colorscheme-sitemgr.png)
+
+eDirectory's default theme offers five colors to be changed:
+
 * Color 1 and Color 2: these are the two main colors of theme pallet
 * Main navigation background
 * Main navigation bar links
@@ -170,74 +175,33 @@ The last step of your theme customization is to update this functionality. This 
 
 {% highlight php %}
 {% raw %}
+# ----------------------------------------------------------------------------------------------------
 
-    //Theme: Default
-	//Scheme Color: Default
+.
+.
+.
+.
+.
+.
+.
 
-	//Main pallete colors
-	$arrayColors["default"]["default"]["color1"] = "42414f";
-	$arrayColors["default"]["default"]["color2"] = "ff5a5f";
+//Theme: Wedding
+//Scheme Color: Wedding
 
-	//Advanced colors
-	$arrayColors["default"]["default"]["colorNavbar"] = "f8f8f8";
-	$arrayColors["default"]["default"]["colorNavbarLink"] = "252525";
-	$arrayColors["default"]["default"]["colorFooterLink"] = "f2f2f4";
-	$arrayColors["default"]["default"]["fontOption"] = "1";
-	$arrayColors["default"]["default"]["fontName"] = "\"Source Sans Pro\", \"Trebuchet MS\", sans-serif";
+//Main pallete colors
+$arrayColors["wedding"]["wedding"]["color1"] = "7f4c4c";
+$arrayColors["wedding"]["wedding"]["color2"] = "ff9797";
 
-	$arrayColors["default"]["default"]["colorKnob"] = "333333";
+//Advanced colors
+$arrayColors["wedding"]["wedding"]["colorNavbar"] = "fcfcfc";
+$arrayColors["wedding"]["wedding"]["colorNavbarLink"] = "7f4c4c";
+$arrayColors["wedding"]["wedding"]["colorFooterLink"] = "ffffff";
+$arrayColors["wedding"]["wedding"]["fontOption"] = "1";
+$arrayColors["wedding"]["wedding"]["fontName"] = "\"Source Sans Pro\", \"Trebuchet MS\", sans-serif;";
 
-	# ----------------------------------------------------------------------------------------------------
-	//Theme: Doctor
-	//Scheme Color: Doctor
+$arrayColors["wedding"]["wedding"]["colorKnob"] = "333333";
 
-	//Main pallete colors
-	$arrayColors["doctor"]["doctor"]["color1"] = "244576";
-	$arrayColors["doctor"]["doctor"]["color2"] = "638cbf";
-
-	//Advanced colors
-	$arrayColors["doctor"]["doctor"]["colorNavbar"] = "ffffff";
-	$arrayColors["doctor"]["doctor"]["colorNavbarLink"] = "2d2d2c";
-	$arrayColors["doctor"]["doctor"]["colorFooterLink"] = "2d2d2c";
-	$arrayColors["doctor"]["doctor"]["fontOption"] = "1";
-	$arrayColors["doctor"]["doctor"]["fontName"] = "\"Source Sans Pro\", \"Trebuchet MS\", sans-serif";
-
-	$arrayColors["doctor"]["doctor"]["colorKnob"] = "333333";
-
-	# ----------------------------------------------------------------------------------------------------
-	//Theme: Restaurant
-	//Scheme Color: Restaurant
-
-	//Main pallete colors
-	$arrayColors["restaurant"]["restaurant"]["color1"] = "722302";
-	$arrayColors["restaurant"]["restaurant"]["color2"] = "180c0c";
-
-	//Advanced colors
-	$arrayColors["restaurant"]["restaurant"]["colorNavbar"] = "f1f4f0";
-	$arrayColors["restaurant"]["restaurant"]["colorNavbarLink"] = "722302";
-	$arrayColors["restaurant"]["restaurant"]["colorFooterLink"] = "22161b";
-	$arrayColors["restaurant"]["restaurant"]["fontOption"] = "1";
-	$arrayColors["restaurant"]["restaurant"]["fontName"] = "Bitter, Georgia, \"Times New Roman\", Times, serif;";
-
-	$arrayColors["restaurant"]["restaurant"]["colorKnob"] = "333333";
-	# ----------------------------------------------------------------------------------------------------
-	//Theme: Wedding
-	//Scheme Color: Wedding
-
-	//Main pallete colors
-	$arrayColors["wedding"]["wedding"]["color1"] = "7f4c4c";
-	$arrayColors["wedding"]["wedding"]["color2"] = "ff9797";
-
-	//Advanced colors
-	$arrayColors["wedding"]["wedding"]["colorNavbar"] = "fcfcfc";
-	$arrayColors["wedding"]["wedding"]["colorNavbarLink"] = "7f4c4c";
-	$arrayColors["wedding"]["wedding"]["colorFooterLink"] = "ffffff";
-	$arrayColors["wedding"]["wedding"]["fontOption"] = "1";
-	$arrayColors["wedding"]["wedding"]["fontName"] = "\"Source Sans Pro\", \"Trebuchet MS\", sans-serif;";
-
-	$arrayColors["wedding"]["wedding"]["colorKnob"] = "333333";
-
-	define("ARRAY_DEFAULT_COLORS", serialize($arrayColors));
+define("ARRAY_DEFAULT_COLORS", serialize($arrayColors));
 
 {% endraw %}
 {% endhighlight %}
@@ -246,91 +210,50 @@ The last step of your theme customization is to update this functionality. This 
 
 {% highlight php %}
 {% raw %}
-    //Theme: Default
-	//Scheme Color: Default
 
-	//Main pallete colors
-	$arrayColors["default"]["default"]["color1"] = "42414f";
-	$arrayColors["default"]["default"]["color2"] = "ff5a5f";
+.
+.
+.
+.
+.
+.
+.
 
-	//Advanced colors
-	$arrayColors["default"]["default"]["colorNavbar"] = "f8f8f8";
-	$arrayColors["default"]["default"]["colorNavbarLink"] = "252525";
-	$arrayColors["default"]["default"]["colorFooterLink"] = "f2f2f4";
-	$arrayColors["default"]["default"]["fontOption"] = "1";
-	$arrayColors["default"]["default"]["fontName"] = "\"Source Sans Pro\", \"Trebuchet MS\", sans-serif";
+# ----------------------------------------------------------------------------------------------------
+//Theme: Wedding
+//Scheme Color: Wedding
 
-	$arrayColors["default"]["default"]["colorKnob"] = "333333";
+//Main pallete colors
+$arrayColors["wedding"]["wedding"]["color1"] = "7f4c4c";
+$arrayColors["wedding"]["wedding"]["color2"] = "ff9797";
 
-	# ----------------------------------------------------------------------------------------------------
-	//Theme: Doctor
-	//Scheme Color: Doctor
+//Advanced colors
+$arrayColors["wedding"]["wedding"]["colorNavbar"] = "fcfcfc";
+$arrayColors["wedding"]["wedding"]["colorNavbarLink"] = "7f4c4c";
+$arrayColors["wedding"]["wedding"]["colorFooterLink"] = "ffffff";
+$arrayColors["wedding"]["wedding"]["fontOption"] = "1";
+$arrayColors["wedding"]["wedding"]["fontName"] = "\"Source Sans Pro\", \"Trebuchet MS\", sans-serif;";
 
-	//Main pallete colors
-	$arrayColors["doctor"]["doctor"]["color1"] = "244576";
-	$arrayColors["doctor"]["doctor"]["color2"] = "638cbf";
+$arrayColors["wedding"]["wedding"]["colorKnob"] = "333333";
 
-	//Advanced colors
-	$arrayColors["doctor"]["doctor"]["colorNavbar"] = "ffffff";
-	$arrayColors["doctor"]["doctor"]["colorNavbarLink"] = "2d2d2c";
-	$arrayColors["doctor"]["doctor"]["colorFooterLink"] = "2d2d2c";
-	$arrayColors["doctor"]["doctor"]["fontOption"] = "1";
-	$arrayColors["doctor"]["doctor"]["fontName"] = "\"Source Sans Pro\", \"Trebuchet MS\", sans-serif";
+# ----------------------------------------------------------------------------------------------------
+//Theme: MyTheme
+//Scheme Color: MyTheme
 
-	$arrayColors["doctor"]["doctor"]["colorKnob"] = "333333";
+//Main pallete colors
+$arrayColors["mytheme"]["mytheme"]["color1"] = "7f4c4c";
+$arrayColors["mytheme"]["mytheme"]["color2"] = "ff9797";
 
-	# ----------------------------------------------------------------------------------------------------
-	//Theme: Restaurant
-	//Scheme Color: Restaurant
+//Advanced colors
+$arrayColors["mytheme"]["mytheme"]["colorNavbar"] = "fcfcfc";
+$arrayColors["mytheme"]["mytheme"]["colorNavbarLink"] = "7f4c4c";
+$arrayColors["mytheme"]["mytheme"]["colorFooterLink"] = "ffffff";
+$arrayColors["mytheme"]["mytheme"]["fontOption"] = "1";
+$arrayColors["mytheme"]["mytheme"]["fontName"] = "\"Source Sans Pro\", \"Trebuchet MS\", sans-serif;";
 
-	//Main pallete colors
-	$arrayColors["restaurant"]["restaurant"]["color1"] = "722302";
-	$arrayColors["restaurant"]["restaurant"]["color2"] = "180c0c";
+$arrayColors["mytheme"]["mytheme"]["colorKnob"] = "333333";
 
-	//Advanced colors
-	$arrayColors["restaurant"]["restaurant"]["colorNavbar"] = "f1f4f0";
-	$arrayColors["restaurant"]["restaurant"]["colorNavbarLink"] = "722302";
-	$arrayColors["restaurant"]["restaurant"]["colorFooterLink"] = "22161b";
-	$arrayColors["restaurant"]["restaurant"]["fontOption"] = "1";
-	$arrayColors["restaurant"]["restaurant"]["fontName"] = "Bitter, Georgia, \"Times New Roman\", Times, serif;";
-
-	$arrayColors["restaurant"]["restaurant"]["colorKnob"] = "333333";
-
-	# ----------------------------------------------------------------------------------------------------
-	//Theme: Wedding
-	//Scheme Color: Wedding
-
-	//Main pallete colors
-	$arrayColors["wedding"]["wedding"]["color1"] = "7f4c4c";
-	$arrayColors["wedding"]["wedding"]["color2"] = "ff9797";
-
-	//Advanced colors
-	$arrayColors["wedding"]["wedding"]["colorNavbar"] = "fcfcfc";
-	$arrayColors["wedding"]["wedding"]["colorNavbarLink"] = "7f4c4c";
-	$arrayColors["wedding"]["wedding"]["colorFooterLink"] = "ffffff";
-	$arrayColors["wedding"]["wedding"]["fontOption"] = "1";
-	$arrayColors["wedding"]["wedding"]["fontName"] = "\"Source Sans Pro\", \"Trebuchet MS\", sans-serif;";
-
-	$arrayColors["wedding"]["wedding"]["colorKnob"] = "333333";
-
-	# ----------------------------------------------------------------------------------------------------
-    //Theme: MyTheme
-    //Scheme Color: MyTheme
-
-    //Main pallete colors
-    $arrayColors["mytheme"]["mytheme"]["color1"] = "7f4c4c";
-    $arrayColors["mytheme"]["mytheme"]["color2"] = "ff9797";
-
-    //Advanced colors
-    $arrayColors["mytheme"]["mytheme"]["colorNavbar"] = "fcfcfc";
-    $arrayColors["mytheme"]["mytheme"]["colorNavbarLink"] = "7f4c4c";
-    $arrayColors["mytheme"]["mytheme"]["colorFooterLink"] = "ffffff";
-    $arrayColors["mytheme"]["mytheme"]["fontOption"] = "1";
-    $arrayColors["mytheme"]["mytheme"]["fontName"] = "\"Source Sans Pro\", \"Trebuchet MS\", sans-serif;";
-
-    $arrayColors["mytheme"]["mytheme"]["colorKnob"] = "333333";
-
-	define("ARRAY_DEFAULT_COLORS", serialize($arrayColors));
+define("ARRAY_DEFAULT_COLORS", serialize($arrayColors));
 
 {% endraw %}
 {% endhighlight %}
@@ -338,6 +261,116 @@ The last step of your theme customization is to update this functionality. This 
 ---
 
 ## Pages List
+
+For your theme customization, you'll work on three sections of the system:
+
+1) Frontend: all pages available for site visitor. This sections includes the following pages:
+
+* Sitemap
+* Claim
+* Results (raiz)
+* Advertise
+* Order Listing
+* Order Event
+* Order Classified
+* Order Banner
+* Order Article
+* Maintenance Page
+* Home Page
+* Contact Us
+* Faq
+* Error Page
+* Lead General Form
+* Listing Home
+* Listing Results
+* Listing Detail
+* Listing Reviews
+* Listing Checkins
+* Listing All Categories
+* Listing All Locations
+* Event Home
+* Event Results
+* Event Detail
+* Event All Categories
+* Event All Locations
+* Classified Home
+* Classified  Results
+* Classified  Detail
+* Classified  All Categories
+* Classified  All Locations
+* Article Home
+* Article  Results
+* Article  Detail
+* Article  All Categories
+* Article Reviews
+* Deal  Home
+* Deal  Results
+* Deal  Detail
+* Deal  All Categories
+* Deal All Locations
+* Blog Home
+* Blog Results
+* Blog Detail
+* Blog All Categories
+* Privacy Policy
+* Terms of Use
+
+2) Profile: sections where visitors can sign up and manage their accounts. This sections includes the following pages:
+
+* Profile Add
+* Profile Edit
+* Profile Home
+* Profile Login
+* Profile Forgot Password
+* Profile Reset Password
+
+3) Sponsors: section where sponsors can manage their ads, make payments, etc. This sections includes the following pages:
+
+* Home
+* Faq
+* Forgot password
+* Help
+* Login
+* Reset password
+* Account
+* Article > Add / Edit
+* Article > Package
+* Article > Preview
+* Banner > Add / Edit
+* Banner > Preview
+* Classified > Add / Edit
+* Classified > Level
+* Classified > Package
+* Classified > Preview
+* Deal > Add / Edit
+* Deal > Preview
+* Event > Add / Edit
+* Event > Preview
+* Event > Level
+* Event > Package
+* Listing > Add / Edit
+* Listing > Package
+* Listing > Preview
+* Listing > Backlink
+* Listing > Level
+* Listing > Click to call
+* Checkout > Make Payment
+* Checkout > Invoice (pop up)
+* Checkout > Pay (step 2)
+* Checkout > Process Payment (step 3 - retorno do gateway)
+* Transactions > History
+* Transactions > View
+* Claim > Billing
+* Claim > Invoice
+* Claim > Listing
+* Claim > Listing Level
+* Claim > Payment
+* Claim > Process Payment
+* Signup > Invoice
+* Signup > Payment
+* Signup > Process Payment
+
+Usually, the sections Profile and Sponsors do not require any heavy custom work and the HTML should not be changed. Simply go through each page to make sure your new theme style (fonts, typography, etc), was properly applied to these sections.
 
 ---
 
@@ -348,3 +381,5 @@ The last step of your theme customization is to update this functionality. This 
 [Assetic Guthub](https://github.com/kriswallsmith/assetic)
 
 [Getting started with Less](http://lesscss.org/)
+
+[Twig Documentation](http://twig.sensiolabs.org/documentation)
