@@ -10,8 +10,6 @@ tags: [edirectory, custom-design]
 ---
 
 ### First Steps 
-The new eDirectory uses now the Symfony structure in the Front-End pages. But the world is not perfect, so you need to be aware that you may have to change old stuff too, before getting ready to build your own Custom Theme.  
-
 To start creating a new theme, you need to duplicate the default theme folder in 
 `app/Resources/themes/` and give it the name of your custom theme. 
 
@@ -72,7 +70,7 @@ $edir_themes = "default,customtheme";
 $edir_themenames = "eDirectory Default,Custom Theme";
 {% endhighlight %}
 
-Then add the tabbar in line 283 of the file `web/includes/code/layout_editor.php`
+Then add the tabbar in line 283 of the file `web/includes/code/layout_editor.php`. This step is not necessary for versions after 11.1.
 
 {% highlight php %}
 $availableTabs["customtheme"] = "background,color,css";
@@ -95,11 +93,11 @@ $edir_schemenames = "Custom Theme";
 $edir_scheme = "customtheme";
 {% endhighlight %}
 
-In the file `web/conf/constants_customtheme.inc.php`. Change only the configuration needed for the layout according to the mockup and layout. 
+In the file `web/conf/constants_customtheme.inc.php`. Change only the configuration needed for the layout according to the mockup and layout. This step is not necessary for versions after 11.1. 
 
 Configure the file `web/theme/customtheme/colorscheme.php` according the possibilities for the layout using CSS language inside a PHP file.
 
-The last thing you need to do to complete yout theme is update the THEME column of the Levels table (listing_level, article_level, etc) )in the database.
+The last thing you need to do to complete your theme is update the THEME column of the Levels table (listing_level, article_level, etc) )in the database. This step is not necessary for versions after 11.1.
 
 
 *This step needs the database access. If you don't know how to do this, please contact a delevoper.*
